@@ -189,5 +189,15 @@
     }
   },
   "active": "909da511aa587a02",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "notes/1_rtl/HDLBits_1.md",
+    "notes/1_rtl/MOC - Verilog RTL.md",
+    "notes/5_physical_design",
+    "notes/4_verification",
+    "notes/3_protocols",
+    "notes/2_architecture",
+    "README.md",
+    "notes/1_rtl",
+    "notes"
+  ]
 }
