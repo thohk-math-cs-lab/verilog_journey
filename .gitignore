@@ -1,0 +1,30 @@
+# ---------------------------------------------------------------------
+# Obsidian Specific Caches & Volatile Files (Always Ignore)
+# ---------------------------------------------------------------------
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/cache/
+.obsidian-git-data
+
+# ---------------------------------------------------------------------
+# Optional: Community Plugins (Uncomment to exclude)
+# ---------------------------------------------------------------------
+# If you don't want to track third-party plugin source code (heavy), 
+# but still want to keep your plugin settings files, uncomment below:
+# .obsidian/plugins/
+
+# ---------------------------------------------------------------------
+# Trash & Local Device Caches
+# ---------------------------------------------------------------------
+.trash/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------
+# Alternative: Extreme Minimalist Approach (Uncomment to use)
+# ---------------------------------------------------------------------
+# If you want ONLY your markdown notes and absolutely zero configuration 
+# synced across devices, uncomment the lines below:
+# .obsidian/*
+

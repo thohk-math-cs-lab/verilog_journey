@@ -1,149 +1,89 @@
-# Jane Street Protocol Emulator ASIC: Learning Sources
+# Protocol Emulator ASIC — Learning & Build Map
 
-## Competition
-- Announcement and rules: https://blog.janestreet.com/protocol-emulator-asic-competition/
-- Related reverse-engineering puzzle repo: https://github.com/janestreet/asic-puzzle-2026
-- Example public entry scaffold: https://github.com/mtanneer/janestreet.asic.protocol-emulator
+This repository is a hands-on learning path for building an open-source, reprogrammable protocol-emulator ASIC for the Jane Street competition.
 
-## Stage 0: Tiny Tapeout toolchain and testing
-- HDL template (project.v): https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/src/project.v
-- Template test.py: https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/test/test.py
-- Template Makefile: https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/test/Makefile
-- Template info.yaml: https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/info.yaml
-- Testing your design: https://tinytapeout.com/hdl/testing/
-- Important notes: https://tinytapeout.com/hdl/important/
-- Guides index: https://tinytapeout.com/guides/
-- Working with Tiny Tapeout (openic docs): https://docs.openic.org/tutorials/tiny-tapeout/
+**Working rule:** at every stage, copy and run the smallest example, rebuild the useful part, then integrate it into the competition repository. A stage is complete only when its acceptance check passes.
 
-## Stage 1: Minimum Verilog
-- HDLBits: https://www.hdlbits.com/
-- Nandland Learn Verilog: https://nandland.com/learn-verilog/
+## Competition and template
 
-## Stages 2-4: UART and cocotb
-- Nandland UART TX (Project 8): https://nandland.com/project-8-uart-part-2-transmit-data-to-computer/
-- Nandland UART RX (Project 7): https://nandland.com/project-7-uart-part-1-receive-data-from-computer/
-- Nandland UART module: https://nandland.com/uart-serial-port-module/
-- Nandland UART repo: https://github.com/nandland/UART
-- cocotb First Steps: https://docs.cocotb.org/en/stable/first_steps.html
-- cocotb Icarus + GTKWave quickstart: https://learncocotb.com/docs/cocotb-tutorial/3-icarus-gtkwave-quickstart/
+- [Jane Street — Protocol Emulator ASIC Competition](https://blog.janestreet.com/protocol-emulator-asic-competition/)
+- [Tiny Tapeout IHP Verilog Template](https://github.com/TinyTapeout/ttihp-verilog-template)
+- [Tiny Tapeout — Testing Your Design](https://tinytapeout.com/hdl/testing/)
+- [Tiny Tapeout — Local Hardening with LibreLane](https://tinytapeout.com/guides/local-hardening/)
 
-## Stages 5-7: Tiny CPU, ISA, assembler
-- Bruno Levy, From Blinker to RISC-V: https://github.com/BrunoLevy/learn-fpga/tree/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV
-- Bruno Levy tutorial README: https://github.com/BrunoLevy/learn-fpga/blob/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV/README.md
-- SiliconWit, Building a Mini CPU: https://siliconwit.com/education/fpga-digital-design-verilog/building-a-mini-cpu/
-- RP2040 PIO tutorial (MicroPython): https://docs.micropython.org/en/latest/rp2/tutorial/pio.html
-- RP2040 PIO emulator docs: https://rp2040pio-docs.readthedocs.io/en/latest/pio-programs.html
+## Delivery stages
 
-## Stage 9: SPI
-- EcrioniX SPI protocol guide: https://ecrionix.org/protocols/spi/
-- EcrioniX SPI master, Day 21: https://ecrionix.org/fpga-from-scratch/day-21-spi-master/
-- Nandland SPI master: https://github.com/nandland/spi-master
-- Nandland SPI slave: https://github.com/nandland/spi-slave
-- fpga4fun SPI: https://www.fpga4fun.com/SPI1.html
-- Four-mode SPI reference: https://github.com/janschiefer/verilog_spi
-
-## Stage 10: I2C
-- EcrioniX I2C guide: https://ecrionix.org/serial-protocols/i2c/
-- fpga4fun I2C: https://www.fpga4fun.com/I2C.html
-- Luis Llamas, I2C master in Verilog: https://www.luisllamas.es/en/fpga-i2c-protocol-master-slave/
-
-## Stage 13: Formal verification
-- SymbiYosys quickstart: https://symbiyosys.readthedocs.io/en/latest/quickstart.html
-- SymbiYosys Verilog formal extensions: https://symbiyosys.readthedocs.io/en/latest/verilog.html
-- ZipCPU Verilog/formal tutorial: https://zipcpu.com/tutorial/
-- ZipCPU formal courseware: https://zipcpu.com/tutorial/formal.html
-
-## Stages 14-16: Hardening and submission
-- Hardening Tiny Tapeout projects locally: https://tinytapeout.com/guides/local-hardening/
-- Tiny Tapeout site: https://tinytapeout.com/
-- Tiny Tapeout FAQ: https://tinytapeout.com/faq/
-- IHP CMOS5L shuttle: https://github.com/TinyTapeout/tinytapeout-ihp-0p4
-- Multiplexer docs: https://github.com/TinyTapeout/tt-multiplexer/blob/main/docs/INFO.md
-- Template test README (gate-level): https://github.com/TinyTapeout/tt07-verilog-template/blob/main/test/README.md
-
-## Deferred (post-competition)
-- cpq bare-metal programming guide: https://github.com/cpq/bare-metal-programming-guide
-- Kumar Khandagle, Communication Series P1 (UART/SPI/I2C): https://www.udemy.com/course/communication-series-p1-uart-spi-and-i2c-in-verilog/
-- Kumar Khandagle, Building a Processor with Verilog: https://www.udemy.com/course/building-a-processor-with-verilog-hdl-from-scratch/
-- Kumar Khandagle, cocotb fundamentals: https://www.udemy.com/course/python-for-vlsi-engineer-p2-understanding-cocotb/
-- Kumar Khandagle, Verilog Lint essentials: https://www.udemy.com/course/lint-essentials-for-rtl-design-engineer/
-
-Use a **vertical-slice curriculum**, not a conventional course sequence: learn one narrowly scoped skill, implement it immediately in the Tiny Tapeout repository, and move on once its acceptance test passes.
-
-## Delivery map
-
-| Stage | Deliverable | Follow this material | Stop when |
+| Stage | Build outcome | Exact lesson/chapter to follow | Completion check |
 |---:|---|---|---|
-| 0 | Reliable simulation loop | Tiny Tapeout: **Testing Your Design** | You can deliberately introduce a bug, catch it with cocotb, locate it in GTKWave and fix it.  [blog.janestreet](https://blog.janestreet.com/protocol-emulator-asic-competition/) |
-| 1 | Minimum usable Verilog | **HDLBits:** modules, vectors, combinational logic, DFFs, counters, shift registers and FSMs | A counter drives `uo_out[0]` at exact verified cycles. Do not complete the whole site.  [tinytapeout](https://tinytapeout.com/hdl/testing/) |
-| 2 | Fixed UART transmitter | Nandland: **Project 8 – UART TX** | Bytes `00`, `55`, `A5`, `FF` produce correct start/data/stop timing.  [hdlbits.01xz](https://hdlbits.01xz.net/wiki/Main_Page) |
-| 3 | Python verification | cocotb: **First Steps** | A Python decoder reconstructs UART bytes using only the TX pin.  [nandland](https://nandland.com/uart-serial-port-module/) |
-| 4 | Fixed UART receiver | Nandland: **Project 7 – UART RX** | cocotb sends phase-offset UART waveforms and your RTL recovers the bytes.  [docs.cocotb](https://docs.cocotb.org/en/stable/first_steps.html) |
-| 5 | Fetch/decode/execute core | Bruno Levy: **From Blinker to RISC-V, Steps 3–9** | A reduced core reads ROM instructions, branches, loops and changes an output register. Do not port all of RV32I.  [nandland](https://nandland.com/project-7-uart-part-1-receive-data-from-computer/) |
-| 6 | Custom protocol ISA | **Building a Mini CPU**, followed by the MicroPython **RP2040 PIO tutorial** | You have a documented encoding for `SET`, `DIR`, `WAIT`, `IN`, `OUT`, `JMP`, `JNZ`, `PUSH`, `PULL` and `HALT`.  [github](https://github.com/BrunoLevy/learn-fpga/tree/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV) |
-| 7 | Assembler and program memory | Bruno Levy Step 7: machine words and `$readmemh()` | `assembler.py uart.asm > uart.hex` loads and executes without modifying RTL.  [nandland](https://nandland.com/project-7-uart-part-1-receive-data-from-computer/) |
-| 8 | Programmable UART | Reuse Nandland UART as a reference oracle | The generic engine—not a UART FSM—executes `uart_tx.hex` and reproduces the reference waveform.  [nandland](https://nandland.com/project-8-uart-part-2-transmit-data-to-computer/) |
-| 9 | Programmable SPI | EcrioniX: **SPI Master Controller in Verilog**, cross-check against Nandland SPI | The unchanged engine runs SPI Mode 0 and Mode 3 programs, including simultaneous MISO capture.  [docs.micropython](https://docs.micropython.org/en/v1.23.0/rp2/tutorial/pio.html) |
-| 10 | Programmable I²C | EcrioniX: **I²C Master**, then fpga4fun I²C | Microcode generates START/address/ACK/data/STOP using `uio_oe` for drive-low/release behavior.  [deepwiki](https://deepwiki.com/nandland/spi-master/4.1-verilog-spi_master-module) |
-| 11 | Host loader/interface | Bruno Levy Step 17: **memory-mapped I/O** | An external host can load instructions/data, start execution, poll status and retrieve received data.  [github](https://github.com/BrunoLevy/learn-fpga/blob/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV/README.md) |
-| 12 | Complete regression | Extend the cocotb tests from Stage 3 | One command tests every opcode, UART, SPI, I²C, resets, boundaries and randomized payloads.  [nandland](https://nandland.com/uart-serial-port-module/) |
-| 13 | Formal safety checks | SymbiYosys: **Getting Started** | Proofs cover reset state, PC bounds, output-enable safety and bounded instruction retirement.  [fpga4fun](https://www.fpga4fun.com/I2C.html) |
-| 14 | Physical implementation | Tiny Tapeout: **Hardening Projects Locally** | The 6×4 design completes synthesis, placement and routing without fatal timing/DRC problems.  [symbiyosys.readthedocs](https://symbiyosys.readthedocs.io/en/latest/quickstart.html) |
-| 15 | Gate-level testing | Tiny Tapeout template test guide | Loader, instruction, UART and SPI smoke tests pass with `GATES=yes`.  [tinytapeout](https://tinytapeout.com/guides/local-hardening/) |
-| 16 | Submission package | Tiny Tapeout template instructions | A fresh user can clone, test, assemble firmware, harden and understand the design.  [github](https://github.com/TinyTapeout/tt07-verilog-template/blob/main/test/README.md) |
+| 0 | Edit, simulate, test and waveform-debug loop | [Tiny Tapeout: Writing Your First Test](https://tinytapeout.com/hdl/testing/) — complete **Getting Started**, **Writing a Test**, **Running Tests**, **Viewing Waveforms**, and **GitHub Actions** | Introduce one known bug, catch it in cocotb, inspect it in GTKWave, then fix it |
+| 1 | Basic synthesizable RTL | [HDLBits problem index](https://hdlbits.01xz.net/wiki/Problem_sets) — complete **Verilog Language > Modules**; **Vectors**; **Basic Gates**; **Combinational Logic**; **Sequential Logic > Flip-Flops**; **Counters**; **Shift Registers**; **Finite State Machines** | `uo_out[0]` toggles every eight clocks, with reset and cocotb timing assertions |
+| 2 | Fixed UART transmitter oracle | [Nandland Project 8 — UART Part 2: Transmit Data](https://nandland.com/project-8-uart-part-2-transmit-data-to-computer/) — follow the full article: state diagram, Verilog TX module, testbench and waveform | Correct start, data and stop timing for `00`, `55`, `A5`, and `FF` |
+| 3 | Python simulation scoreboard | [cocotb: Quickstart](https://docs.cocotb.org/en/stable/quickstart.html) — complete **Install cocotb**, **Write a Test**, **Run a Test**, **Accessing Handles**, and **Logging** | Python decodes bytes solely from the UART TX pin |
+| 4 | Fixed UART receiver oracle | [Nandland Project 7 — UART Part 1: Receive Data](https://nandland.com/project-7-uart-part-1-receive-data-from-computer/) — follow the full article: start-bit detection, sampling timing, RX module and testbench | cocotb-generated UART frames are received across phase offsets |
+| 5 | Tiny fetch/decode/execute core | [Bruno Levy: From Blinker to RISC-V](https://github.com/BrunoLevy/learn-fpga/blob/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV/README.md) — complete **Steps 3–9 only**: ROM, instruction decode, register bank, fetch/decode/execute, ALU, assembler, branches/jumps | ROM program changes an output, decrements a register and branches in a loop |
+| 6 | Protocol-machine ISA | [SiliconWit: Building a Mini CPU](https://siliconwit.com/education/fpga-digital-design-verilog/building-a-mini-cpu/) — complete the page in order; then [MicroPython RP2040 PIO](https://docs.micropython.org/en/latest/rp2/tutorial/pio.html) — read **PIO program**, **state machine**, and every `@asm_pio()` example | `docs/isa.md` specifies every instruction and its exact cycle/pin behavior |
+| 7 | Assembler and program loading | [Bruno Levy Step 7 — using the VERILOG assembler](https://github.com/BrunoLevy/learn-fpga/blob/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV/README.md#step-7-using-the-verilog-assembler) — adapt its machine-word/program-memory pattern; use `$readmemh()` for simulation | `assemble.py firmware/uart_tx.asm > firmware/uart_tx.hex` runs without RTL edits |
+| 8 | Programmable UART | [Nandland UART serial-port module](https://nandland.com/uart-serial-port-module/) — use the **UART Transmitter**, **UART Receiver**, and linked testbench as a waveform oracle | Generic engine executes `uart_tx.hex`; the fixed UART FSM is not on the submission datapath |
+| 9 | Programmable SPI | [EcrioniX SPI protocol guide](https://ecrionix.org/protocols/spi/) — read **Signals**, **CPOL/CPHA modes**, **timing diagrams**, and **Verilog RTL master/testbench**; then inspect [Nandland SPI master `src/`](https://github.com/nandland/spi-master/tree/master/src) | One engine runs Mode 0 and Mode 3 microcode with MOSI/MISO verification |
+| 10 | Programmable I²C | [EcrioniX I²C guide](https://ecrionix.org/serial-protocols/i2c/) — read **Open-Drain Bus**, **START/STOP**, **Addressing**, **ACK/NACK**, **Clock Stretching**, and **Verilog Master FSM**; then complete [fpga4fun I²C Parts 1–4](https://www.fpga4fun.com/I2C.html) | Microcode performs START, address, ACK, data and STOP using open-drain drive/release |
+| 11 | Host loader and result interface | [Bruno Levy Step 17 — System Calls and I/O Devices](https://github.com/BrunoLevy/learn-fpga/blob/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV/README.md#step-17-system-calls-and-io-devices) — adapt its memory-mapped data/status-register pattern | Host can load a program/data, start it, read status, and retrieve captured data |
+| 12 | Repeatable regression | [cocotb: Writing Testbenches](https://docs.cocotb.org/en/stable/writing_testbenches.html) — complete **Triggers**, **Concurrent Execution**, and **Assertions**; use the [Regression Manager API](https://docs.cocotb.org/en/stable/library_reference.html#cocotb.regression) only when needed | One command tests ISA, UART, SPI, I²C, resets, limits and seeded randomized cases |
+| 13 | Formal safety checks | [SymbiYosys quickstart](https://symbiyosys.readthedocs.io/en/latest/quickstart.html) — complete **Example: FIFO**, including `bmc`, `prove`, and `cover`; then read [Formal Verilog extensions](https://symbiyosys.readthedocs.io/en/latest/verilog.html): `assert`, `assume`, `cover`, `$past`, and `FORMAL` | Prove reset behavior, program-counter bounds, output-enable safety, and instruction-retirement rules |
+| 14 | RTL-to-GDS hardening | [Tiny Tapeout: Hardening Projects Locally](https://tinytapeout.com/guides/local-hardening/) — complete **Environment Setup**, **Setup Dependencies**, **Harden a Design**, and the **IHP** command variant | 6×4 design completes synthesis, place-and-route and timing checks; archive reports/GDS |
+| 15 | Gate-level sign-off | [Tiny Tapeout: Gate-Level Testing](https://tinytapeout.com/hdl/testing/#gate-level-testing) — run the documented `make -B GATES=yes` flow | Loader/core/UART/SPI smoke tests pass against the gate-level netlist |
+| 16 | Submission-ready repository | [IHP template README](https://github.com/TinyTapeout/ttihp-verilog-template) — complete **Set up your project**, **`info.yaml`**, **Testing**, and documentation requirements; then re-read the [competition brief](https://blog.janestreet.com/protocol-emulator-asic-competition/) | A new contributor can clone, test, assemble protocol firmware, harden, and understand the design |
 
-## Initial ISA
+## Initial ISA target
 
-Start with a small instruction set rather than inventing everything at once:
+Design a small custom instruction set; do not implement full RISC-V or clone RP2040 PIO.
 
-| Instruction | Immediate purpose |
+| Instruction | Required effect |
 |---|---|
-| `SET mask,value` | Change output-pin values |
-| `DIR mask,value` | Configure bidirectional output enables |
-| `WAIT cycles` | Generate deterministic delays |
-| `WAITPIN pin,level` | Wait for an external signal |
-| `OUT count` | Shift bits from the TX register onto pins |
-| `IN count` | Sample pins into the RX register |
-| `JMP address` | Repeat protocol sequences |
-| `JNZ reg,address` | Implement bit-count and timeout loops |
-| `PULL` | Obtain transmission data from the host |
+| `SET mask, value` | Set selected output-pin values |
+| `DIR mask, value` | Set selected bidirectional output enables |
+| `WAIT cycles` | Delay by a deterministic number of core cycles |
+| `WAITPIN pin, level` | Stall until an input reaches a level |
+| `OUT count` | Shift transmit-register bits onto protocol pins |
+| `IN count` | Sample protocol pins into a receive register |
+| `JMP address` | Unconditional loop/branch |
+| `JNZ reg, address` | Conditional bit-count or timeout loop |
+| `PULL` | Receive host-provided transmit data |
 | `PUSH` | Return captured data to the host |
-| `HALT` | End a protocol job predictably |
+| `HALT` | End the current program predictably |
 
-RP2040 PIO is the best architectural reference because it similarly uses a compact instruction set for `JMP`, `WAIT`, `IN`, `OUT`, `PUSH`, `PULL`, `MOV` and `SET`, with instruction-level timing controls. Study its semantics, but design a smaller encoding suited to your 6×4-tile budget. [siliconwit](https://siliconwit.com/education/fpga-digital-design-verilog/building-a-mini-cpu/)
+## Required repository evidence
 
-## Learning rule
+The final competition repository should contain:
 
-For every tutorial, follow this three-pass pattern:
+- Architecture/block diagram and pin map
+- ISA specification including instruction cycle timing
+- Host program-loading and result-retrieval protocol
+- Python assembler and usage example
+- UART, SPI and I²C assembly programs
+- Reproducible cocotb regression tests
+- SymbiYosys properties and proof commands/results
+- Synthesis, place-and-route and timing reports
+- Gate-level test evidence
+- Known limits, tested clock rates and protocol modes
+- An open-source license
 
-1. **Copy and run:** reproduce the author’s result unchanged.
-2. **Rebuild:** recreate the essential module without looking at the implementation.
-3. **Translate:** integrate only the concept into your Tiny Tapeout architecture.
+## Primary tool references
 
-Do not count watching videos as progress. Each stage ends with committed RTL, tests, waveforms or physical reports.
+- [OSS CAD Suite](https://github.com/YosysHQ/oss-cad-suite-build)
+- [Icarus Verilog](https://steveicarus.github.io/iverilog/)
+- [Verilator](https://www.veripool.org/verilator/)
+- [GTKWave](https://gtkwave.github.io/gtkwave/)
+- [cocotb](https://www.cocotb.org/)
+- [SymbiYosys](https://github.com/YosysHQ/SymbiYosys)
+- [LibreLane](https://github.com/librelane/librelane)
 
-## First seven sessions
+## First seven work sessions
 
-1. Preserve the passing template with a Git tag; inject and diagnose one counter bug.
-2. Complete selected HDLBits exercises; implement an eight-cycle output toggle.
-3. Reproduce Nandland’s UART transmitter and testbench.
-4. Port UART TX into the Tiny Tapeout module hierarchy.
-5. Write a cocotb UART decoder and test `00`, `55`, `A5`, `FF`.
-6. Rewrite UART TX from scratch until the same tests pass.
-7. Begin Bruno Levy Steps 3–5: instruction memory, decoder, register bank and execution FSM.
+1. Tag the passing template; inject, diagnose and fix one counter bug.
+2. Complete the selected HDLBits exercises; implement an eight-cycle output toggle in the real template.
+3. Reproduce Nandland UART TX and its waveform.
+4. Port UART TX to the Tiny Tapeout hierarchy; add cocotb checking for `0x55`.
+5. Extend the cocotb decoder for `00`, `A5`, `FF` and two baud divisors.
+6. Rebuild UART TX from scratch until the tests pass.
+7. Begin Bruno Levy Steps 3–5 in the learning repository: instruction memory, decoder, register bank and execution FSM.
 
-This gives you a real protocol deliverable before studying processor internals. The fixed UART then becomes the executable specification against which the programmable machine is tested.
-
-## Defer until later
-
-Do not study these before the submission is functionally stable:
-
-- Full RISC-V
-- Pipelining, caches and branch prediction
-- AXI/APB
-- UVM and class-based SystemVerilog
-- CDC unless you introduce another clock domain
-- Vendor FPGA IP
-- Transistor-level CMOS design
-- Hardcaml migration
-- Advanced DFT
