@@ -215,7 +215,8 @@ endmodule
 	...
 	out[ 1] = ~e ^ d;
 	out[ 0] = ~e ^ e;
-
+	
+![[Pasted image 20261008010127.png]]
 
 ```verilog
 module top_module (
