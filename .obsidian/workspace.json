@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "notes/1_rtl/HDLBits/Vectors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Vectors"
             }
           }
         ]
@@ -190,13 +190,23 @@
   },
   "active": "909da511aa587a02",
   "lastOpenFiles": [
-    "notes/1_rtl/HDLBits_1.md",
+    "images/Pasted image 20261008003806.png",
+    "images/Pasted image 20261008003748.png",
+    "images/Pasted image 20261008003450.png",
+    "images/Pasted image 20261008003313.png",
     "notes/1_rtl/MOC - Verilog RTL.md",
+    "notes/1_rtl/HDLBits/Vectors.md",
+    "images/Pasted image 20261005074602.png",
+    "notes/1_rtl/HDLBits/Basics.md",
+    "images/Pasted image 20261005074513.png",
+    "images/Pasted image 20261005074410.png",
+    "images",
+    "notes/1_rtl/HDLBits",
+    "README.md",
     "notes/5_physical_design",
     "notes/4_verification",
     "notes/3_protocols",
     "notes/2_architecture",
-    "README.md",
     "notes/1_rtl",
     "notes"
   ]

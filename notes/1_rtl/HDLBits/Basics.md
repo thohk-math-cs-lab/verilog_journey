@@ -89,6 +89,8 @@ endmodule
 ```
 
 8. The 7458 Chip
+
+![[Pasted image 20261005074602.png]]
 ```verilog
 module top_module ( 
     input p1a, p1b, p1c, p1d, p1e, p1f,
