@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/1_rtl/HDLBits/Vectors.md",
+                "file": "notes/1_rtl/HDLBits/3 Modules.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vectors"
+              "title": "3 Modules"
             }
           }
         ]
@@ -190,17 +190,22 @@
   },
   "active": "909da511aa587a02",
   "lastOpenFiles": [
+    "images/Pasted image 20261009081925.png",
+    "images/Pasted image 20261009081910.png",
+    "images/Pasted image 20261009080701.png",
+    "images/Pasted image 20261009080649.png",
+    "notes/1_rtl/HDLBits/1 Basics.md",
+    "notes/1_rtl/HDLBits/3 Modules.md",
+    "notes/1_rtl/HDLBits/2 Vectors.md",
+    "notes/1_rtl/HDLBits/Untitled",
     "images/Pasted image 20261008010127.png",
     "images/Pasted image 20261008003806.png",
     "images/Pasted image 20261008003748.png",
     "images/Pasted image 20261008003450.png",
     "images/Pasted image 20261008003313.png",
     "notes/1_rtl/MOC - Verilog RTL.md",
-    "notes/1_rtl/HDLBits/Vectors.md",
     "images/Pasted image 20261005074602.png",
-    "notes/1_rtl/HDLBits/Basics.md",
     "images/Pasted image 20261005074513.png",
-    "images/Pasted image 20261005074410.png",
     "images",
     "notes/1_rtl/HDLBits",
     "README.md",
